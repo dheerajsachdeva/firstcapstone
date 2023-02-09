@@ -64,8 +64,9 @@ const featuredSpeakers = document.querySelector('.featuredSpeakers');
 
 featuredSpeakers.innerHTML = '';
 
-for (let i = 0; i < speakers.length; i += 1) {
-  featuredSpeakers.innerHTML += `
+window.onload = () => {
+  for (let i = 0; i < speakers.length; i += 1) {
+    featuredSpeakers.innerHTML += `
   <section class="featuredSpeakersContainer">
   
   <div class="featuredSpeakersBox">
@@ -79,4 +80,5 @@ for (let i = 0; i < speakers.length; i += 1) {
   </div>
       </div>
   </section>`;
-}
+  }
+};

@@ -4,6 +4,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root {
+  --blackColor: #272a31;
+}
+
 .navbar {
   display: none;
 }
@@ -11,7 +15,7 @@
 .navbar1 {
   width: 100vw;
   height: 30px;
-  background-color: #272a31;
+  background-color: var(--blackColor);
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -30,13 +34,21 @@
 }
 
 .navbar2 a {
-  color: #272a31;
+  color: var(--blackColor);
   text-decoration: none;
   cursor: pointer;
 }
 
 .navbar2-menu a {
-  color: #272a31;
+  color: var(--blackColor);
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10%;
 }
 
 .navbar ul li a {
@@ -52,7 +64,7 @@
   width: 100vw;
   height: 80px;
   background-color: #fff;
-  color: #272a31;
+  color: var(--blackColor);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -83,13 +95,13 @@
   padding-top: 8%;
   padding-left: 10%;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 
 .hamburger-line {
   width: 25px;
   height: 5px;
-  background-color: #272a31;
+  background-color: var(--blackColor);
   margin-bottom: 5px;
 }
 
@@ -120,33 +132,40 @@
   align-items: center;
 }
 
-.section-heading h1 {
+.section-heading h2 {
   width: 90%;
   margin-top: 110px;
   color: #ec5242;
   margin-left: 5%;
 }
 
-.about-section-heading h1 {
+.about-section-heading h2 {
   width: 100vw;
   margin-top: 110px;
   color: #ec5242;
   text-align: center;
 }
 
-.section-heading h2 {
+.section-heading h1 {
   width: 90%;
   margin-top: 10px;
   margin-left: 5%;
   font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 900;
-  background-image: linear-gradient(to bottom right, #ec5242, orange, red);
+
+  /* background-image: linear-gradient(to bottom right, #ec5242, orange, red);
+  -webkit-background-clip: text; */
+
+  /* color: transparent; */
+  background-image: url('./img/rafa-nadal.jpg');
+  background-size: contain;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: rgba(255, 25, 0, 0.7);
+  -webkit-font-smoothing: antialiased;
 }
 
-.about-section-heading h2 {
+.about-section-heading h1 {
   width: 90%;
   margin-top: 10px;
   margin-left: 5%;
@@ -163,7 +182,7 @@
   width: 85%;
   margin-top: 10px;
   margin-left: 5%;
-  color: #272a31;
+  color: var(--blackColor);
   background-color: rgb(247, 247, 248);
   border: 4px solid white;
   padding: 10px;
@@ -176,7 +195,7 @@
 .about-section-msg-768 {
   width: 80%;
   margin-top: 20px;
-  color: #272a31;
+  color: var(--blackColor);
   background-color: #fff;
   border: 2px solid #272a310e;
   padding: 10px;
@@ -188,7 +207,7 @@
 .section-date {
   width: 90%;
   margin-top: 10px;
-  color: #272a31;
+  color: var(--blackColor);
   margin-left: 5%;
   font-size: 1.6rem;
   font-weight: 900;
@@ -197,7 +216,7 @@
 .about-section-details1 {
   width: 80%;
   margin-top: 25px;
-  color: #272a31;
+  color: var(--blackColor);
   font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
@@ -205,7 +224,7 @@
 
 .section-place {
   width: 90%;
-  color: #272a31;
+  color: var(--blackColor);
   margin-left: 5%;
   font-size: 1.2rem;
   font-weight: 500;
@@ -215,7 +234,7 @@
 .about-section-details2 {
   width: 80%;
   margin-top: 5px;
-  color: #272a31;
+  color: var(--blackColor);
   font-size: 0.9rem;
   font-weight: 900;
   text-align: center;
@@ -232,7 +251,7 @@
 }
 
 .about-section1-heading {
-  color: #272a31;
+  color: var(--blackColor);
   font-size: 1.2rem;
   font-weight: 600;
   width: 60%;
@@ -277,7 +296,7 @@
 }
 
 .about-section2-heading {
-  color: #272a31;
+  color: var(--blackColor);
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 20px;
@@ -313,6 +332,7 @@
   max-width: 500px;
   padding-top: 30%;
   padding-bottom: 30%;
+  max-height: 67px;
 }
 
 .about-section2-image1 p {
@@ -332,6 +352,7 @@
   max-width: 500px;
   padding-top: 30%;
   padding-bottom: 30%;
+  max-height: 67px;
 }
 
 .about-section2-image2 p {
@@ -342,7 +363,7 @@
   background-image: url(./img/main_program.png);
   width: 100vw;
   height: 750px;
-  background-color: #272a31;
+  background-color: var(--blackColor);
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
@@ -355,7 +376,7 @@
   align-items: center;
 }
 
-.main-program-container h1 {
+.main-program-container h2 {
   width: 100vw;
   text-align: center;
   color: #fff;
@@ -422,7 +443,7 @@
 }
 
 .featuredSpeakersHeading {
-  color: #272a31;
+  color: var(--blackColor);
   font-weight: 600;
   font-size: 1.5rem;
   width: 100%;
@@ -473,7 +494,7 @@
 }
 
 .featuredSpeakersName {
-  color: #272a31;
+  color: var(--blackColor);
   font-weight: 600;
 }
 
@@ -492,14 +513,14 @@
 }
 
 .featuredSpeakersDetails2 {
-  color: #272a31;
+  color: var(--blackColor);
   font-size: 0.8rem;
   margin-top: 10px;
 }
 
 .partners,
 .about-partners {
-  background-color: #272a31;
+  background-color: var(--blackColor);
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -510,7 +531,7 @@
   margin-top: 20px;
 }
 
-.partners-heading h1 {
+.partners-heading h2 {
   width: 100%;
   text-align: center;
   color: #ffffff9f;
@@ -566,66 +587,56 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger.active .hamburger-line:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
 
-  .hamburger.active .hamburger-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 
-  .hamburger.active .hamburger-line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
+.menu {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.3s;
+  background-color: var(--blackColor);
+  align-items: center;
+  margin-top: 20%;
+  opacity: 0.9;
+}
 
-  .menu {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    left: -100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    transition: 0.3s;
-    background-color: #272a31;
-    align-items: center;
-    margin-top: 20%;
-    opacity: 0.9;
-  }
+.menu.active {
+  left: 0;
+}
 
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 10%;
-  }
+.main-program h3 {
+  display: none;
+}
 
-  .menu.active {
-    left: 0;
-  }
+.about-section-msg-768 {
+  display: none;
+}
 
-  .main-program h3 {
-    display: none;
-  }
-
-  .about-section-msg-768 {
-    display: none;
-  }
-
-  .about-footer-768 {
-    display: none;
-  }
+.about-footer-768 {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
     display: block;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .page-container {
@@ -642,13 +653,13 @@
     height: 900px;
   }
 
-  .section-heading h1 {
+  .section-heading h2 {
     padding-top: 110px;
     margin-top: 0;
     font-size: 3rem;
   }
 
-  .section-heading h2 {
+  .section-heading h1 {
     font-size: 5rem;
     max-width: 60%;
   }
@@ -710,6 +721,7 @@
   }
 
   .main-program h3 {
+    display: block;
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
@@ -748,7 +760,7 @@
     height: 720px;
   }
 
-  .about-section-heading h2 {
+  .about-section-heading h1 {
     width: 50%;
     font-size: 4rem;
     margin-left: 25%;
@@ -759,6 +771,7 @@
   }
 
   .about-section-msg-768 {
+    display: block;
     height: 170px;
     padding: 20px;
     font-size: 1.2rem;
@@ -792,6 +805,7 @@
     flex-direction: row;
     display: flex;
     justify-content: space-between;
+    width: 60%;
   }
 
   .about-section2-image1,
@@ -813,8 +827,14 @@
   }
 
   .about-footer-768 {
-    background-color: #272a31;
+    display: flex;
+    background-color: var(--blackColor);
     color: #fff;
+  }
+
+  .about-footer-768 h2,
+  .footerLogo h2 {
+    font-size: 2rem;
   }
 
   .navbar2 ul {
